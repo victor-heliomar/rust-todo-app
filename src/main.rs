@@ -44,7 +44,7 @@ fn main() {
         let mut task = String::new();
         let stdin = io::stdin();
 
-        println!("\nQué acción deseas realizar?\ncommands: [ {} | {} | {} | {} ]\n\nEscribe 'break' para salir\n", SHOW, CREATE, COMPLETE, DELETE);
+        println!("\nQué acción deseas realizar?\ncommands: [ {} | {} | {} | {} ]\n\nEscribe '{}' para salir\n", SHOW, CREATE, COMPLETE, DELETE, EXIT);
         let action = stdin.lock().lines().next().unwrap().unwrap();
 
         if action == EXIT {
